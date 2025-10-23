@@ -11,4 +11,4 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Build Docker image
-      run: docker-compose build -t app ./dailyquotes
+      run: docker compose build -t app ./dailyquotes
