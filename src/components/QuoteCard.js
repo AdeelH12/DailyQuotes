@@ -6,7 +6,7 @@ const [quote,setQuote] = useState(null);
 
 
 function getQuote () {
-     fetch("http://app:5000/api/quote")
+     fetch("api/quote")
         .then(response => response.json())
         .then(data => {
             console.log("Fetched Data: ", data);
