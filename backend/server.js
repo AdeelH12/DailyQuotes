@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const fs = require("fs");
 const cors = require("cors");
+const path = require("path");
 app.use(cors());
 
 app.get("/api/quote", (req, res) =>{
@@ -16,6 +17,13 @@ app.get("/api/quote", (req, res) =>{
         res.json(quotes[randomIndex])
     })
 })
+
+app.use(express.static(path.join(__dirname, "../frontend/build")));
+
+app.get("*", (req, res) =>{
+    res.sendFile(path.join(__dirname, "../frontend/build", "index.html"))
+})
+
 app.listen(5000, () =>{
-    console.log("Server is running on http://localhost:8080")
+    console.log("Server is running on http://localhost:5000")
 })
