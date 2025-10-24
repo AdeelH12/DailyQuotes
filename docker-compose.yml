@@ -1,10 +1,8 @@
+version: "3.8"
+
 services:
   app:
     build: ./backend
+    image: adeelhussain12/quotes-app:latest
     ports:
       - "5000:5000"
-
-  web:
-    build: ./    
-    ports:
-      - "8080:80"
