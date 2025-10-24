@@ -1,6 +1,6 @@
 FROM node:18 AS build
 WORKDIR /app
-COPY ../frontend ./frontend
+COPY ./frontend ./frontend
 WORKDIR /app/frontend
 RUN npm install
 RUN npm run build
