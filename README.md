@@ -8,8 +8,6 @@
 ![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
 
 ### 🌍 Live Demo
-
-### 🌍 Live Demo
 🔗 **https://quotes-demo-latest.onrender.com**
 
 ---
