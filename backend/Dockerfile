@@ -9,7 +9,7 @@ RUN npm run build
 FROM node:18
 WORKDIR /app
 COPY ./backend ./backend
-COPY --from=build /app/build ./frontend/build
+COPY --from=build /app/build ./build 
 WORKDIR /app/backend
 RUN npm install
 EXPOSE 5000
